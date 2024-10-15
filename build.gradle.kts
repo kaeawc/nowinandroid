@@ -16,8 +16,10 @@
 
 buildscript {
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 
         // Android Build Server
         maven { url = uri("../nowinandroid-prebuilts/m2repository") }

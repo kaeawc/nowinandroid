@@ -20,6 +20,7 @@ initscript {
     val spotlessVersion = "6.23.3"
 
     repositories {
+        mavenLocal()
         mavenCentral()
     }
 

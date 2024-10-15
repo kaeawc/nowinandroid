@@ -16,8 +16,11 @@
 
 dependencyResolutionManagement {
     repositories {
+        mavenLocal()
         google()
         mavenCentral()
+        maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
+        maven("https://maven.pkg.jetbrains.space/kotlin/p/kotlin/bootstrap") { name = "Kotlin-Bootstrap" }
     }
     versionCatalogs {
         create("libs") {
